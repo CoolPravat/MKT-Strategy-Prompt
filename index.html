@@ -706,9 +706,8 @@
             <span>🧪 MSI B2C Strategy Lab</span>
           </h1>
           <p>
-            Configure a B2C product, run an AI-powered strategy analysis, and
-            discuss STP, 4Ps, and competitive moves in class. Designed for
-            India-focused marketing labs.
+            Configure a B2C product's marketing strategy using AI prompts.
+            It is an India-focused report customized for a specific product.
           </p>
         </div>
       </div>
@@ -841,7 +840,7 @@
 Benchmark Outline:</br></br>
 Conduct a suitable analysis of the 5Cs  for the brand/product context</br>
 STP: Define a clear segment, a tight target, and a sharp positioning statement.</br>
-4Ps: Align product features, price logic, place (channel), and promotion with the chosen segment.</br>
+7Ps: Align product features, pricing, place (channel), promotion, etc., for the chosen segment.</br>
 Risks: Note 2–3 likely competitive responses and your counter-moves.</br></br>
 Learning Point: Review and discussion. </p>
               </div>
@@ -1243,7 +1242,7 @@ Target Audience: ${audience}
 ========================
 TASK
 ========================
-Using the above scenario, prepare a comprehensive, classroom-ready, Indian B2C strategy analysis.
+Using the above scenario, prepare a comprehensive, classroom-ready analysis of an Indian B2C strategy.
 
 Your report MUST be approximately 2 pages and strictly follow this structure:
 
@@ -1251,16 +1250,16 @@ PAGE 1 — STRATEGIC ANALYSIS
 1. Category Context (Indian market reality)
 2. Competitive Landscape (realistic India-based competitors and formats)
 3. Core STP Strategy (Segmentation, Targeting, Positioning)
-4. Revised 4Ps Strategy (Product, Price, Place, Promotion) aligned to the chosen positioning
+4. Prepare 7Ps Strategy (Product, Place, Promotion, People, Process, Physical evidence, Price) aligned to the chosen positioning
 
 PAGE 2 — QUANTITATIVE + ADVANCED INSIGHTS
 5. Estimated Market Share (%) — with short rationale
 6. Expected Revenue Growth (%) — with short rationale
 7. Customer Satisfaction Estimate (%) — with explanation
-8. Risk Assessment (Low/Medium/High with explanation)
-9. 5 Key Recommendations (short, punchy, actionable bullet points)
-10. Risk Mitigation Plan (3–5 sentences)
-11. Critical Success Factors (4 bullet points) — what must go right
+8. 5 Key Recommendations (short, punchy, actionable bullet points), 
+9. Critical Success Factors (4 bullet points) — what must go right
+10. 2–3 likely risks and competitive responses and Risk Assessments (Low/Medium/High with explanation)
+11. Note possible counter-moves or risk Mitigation Plan (1-2 sentences)
 
 ========================
 CONTEXT & TONE
@@ -1297,7 +1296,7 @@ CONTEXT & TONE
       aiAnalysis.innerHTML = `
         <h4>📋 Exact Prompt to Paste into Any AI Platform</h4>
         <p style="font-size:0.85rem; color:#6b7280; margin-bottom:6px;">
-          This prompt is auto-copied to your clipboard (where supported). <b>You may also copy it manually below</b>.
+          This prompt is auto-copied to your clipboard (if supported). <b>You may also copy it manually below</b>.
         </p>
         <pre style="font-size:0.8rem; white-space:pre-wrap; background:#f9fafb; padding:12px; border-radius:10px; border:1px solid #e5e7eb; max-height:320px; overflow:auto; margin:0;">
 ${promptText.replace(/</g, "&lt;")}
@@ -1387,13 +1386,14 @@ ${promptText.replace(/</g, "&lt;")}
             <div class="metric-value">${platformLabel}</div>
           </div>
           <div class="metric-card">
-            <div class="metric-label">Report Length</div>
-            <div class="metric-value">~2 Pages</div>
-          </div>
-          <div class="metric-card">
             <div class="metric-label">Action</div>
             <div class="metric-value">Paste Prompt</div>
+          </div>		  
+          <div class="metric-card">
+            <div class="metric-label">AI Draft Report</div>
+            <div class="metric-value">Review & Adapt</div>
           </div>
+
         `;
         metricsReport.innerHTML = metrics.innerHTML;
 
@@ -1431,4 +1431,3 @@ ${promptText.replace(/</g, "&lt;")}
   </script>
 </body>
 </html>
-
