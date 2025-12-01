@@ -1180,7 +1180,7 @@ Learning Point: Review and discussion. </p>
     function updateSelectionSummary() {
       if (!currentSelections.product) {
         selectionSummary.innerHTML =
-          '<div class="placeholder-text" style="padding: 24px 6px;">Start by selecting a product on the left. Each choice updates this summary so students can track the scenario.</div>';
+          '<div class="placeholder-text" style="padding: 24px 6px;">Start by selecting a product on the left. Each choice updates this summary so you can track the scenario.</div>';
       } else {
         const config = PRODUCT_CONFIG[currentSelections.product];
         let html = `<div style="margin-bottom:8px;"><span class="summary-label">Product:</span> <span class="pill">${config.name}</span></div>`;
@@ -1431,6 +1431,7 @@ ${promptText.replace(/</g, "&lt;")}
   </script>
 </body>
 </html>
+
 
 
 
